@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.demo.http.DemoControllerTest" time="0.503" tests="3" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Qintess\Documents\app\outros\demo\target\test-classes;C:\Users\Qintess\Documents\app\outros\demo\target\classes;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.0.0-SNAPSHOT\spring-boot-starter-actuator-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter\3.0.0-SNAPSHOT\spring-boot-starter-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.0.0-SNAPSHOT\spring-boot-starter-logging-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\ch\qos\logback\logback-classic\1.2.10\logback-classic-1.2.10.jar;C:\Users\Qintess\.m2\repository\ch\qos\logback\logback-core\1.2.10\logback-core-1.2.10.jar;C:\Users\Qintess\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.17.1\log4j-to-slf4j-2.17.1.jar;C:\Users\Qintess\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\Qintess\.m2\repository\org\slf4j\jul-to-slf4j\1.7.33\jul-to-slf4j-1.7.33.jar;C:\Users\Qintess\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.0.0\jakarta.annotation-api-2.0.0.jar;C:\Users\Qintess\.m2\repository\org\yaml\snakeyaml\1.30\snakeyaml-1.30.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.0.0-SNAPSHOT\spring-boot-actuator-autoconfigure-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-actuator\3.0.0-SNAPSHOT\spring-boot-actuator-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.1\jackson-databind-2.13.1.jar;C:\Users\Qintess\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.1\jackson-annotations-2.13.1.jar;C:\Users\Qintess\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.1\jackson-core-2.13.1.jar;C:\Users\Qintess\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.1\jackson-datatype-jsr310-2.13.1.jar;C:\Users\Qintess\.m2\repository\io\micrometer\micrometer-core\2.0.0-M1\micrometer-core-2.0.0-M1.jar;C:\Users\Qintess\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Qintess\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.0.0-SNAPSHOT\spring-boot-starter-data-jpa-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.0.0-SNAPSHOT\spring-boot-starter-aop-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-aop\6.0.0-M2\spring-aop-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.0.0-SNAPSHOT\spring-boot-starter-jdbc-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-jdbc\6.0.0-M2\spring-jdbc-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\hibernate\hibernate-core-jakarta\5.6.4.Final\hibernate-core-jakarta-5.6.4.Final.jar;C:\Users\Qintess\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\Qintess\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.0.0\jakarta.persistence-api-3.0.0.jar;C:\Users\Qintess\.m2\repository\net\bytebuddy\byte-buddy\1.12.7\byte-buddy-1.12.7.jar;C:\Users\Qintess\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Qintess\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.0\jakarta.transaction-api-2.0.0.jar;C:\Users\Qintess\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\Qintess\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Qintess\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\Qintess\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\Qintess\.m2\repository\org\glassfish\jaxb\jaxb-runtime\3.0.2\jaxb-runtime-3.0.2.jar;C:\Users\Qintess\.m2\repository\org\glassfish\jaxb\jaxb-core\3.0.2\jaxb-core-3.0.2.jar;C:\Users\Qintess\.m2\repository\org\glassfish\jaxb\txw2\3.0.2\txw2-3.0.2.jar;C:\Users\Qintess\.m2\repository\com\sun\istack\istack-commons-runtime\4.0.1\istack-commons-runtime-4.0.1.jar;C:\Users\Qintess\.m2\repository\org\springframework\data\spring-data-jpa\3.0.0-M1\spring-data-jpa-3.0.0-M1.jar;C:\Users\Qintess\.m2\repository\org\springframework\data\spring-data-commons\3.0.0-M1\spring-data-commons-3.0.0-M1.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-orm\6.0.0-M2\spring-orm-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-context\6.0.0-M2\spring-context-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-tx\6.0.0-M2\spring-tx-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-beans\6.0.0-M2\spring-beans-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\slf4j\slf4j-api\1.7.33\slf4j-api-1.7.33.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-aspects\6.0.0-M2\spring-aspects-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.0.0-SNAPSHOT\spring-boot-starter-web-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.0.0-SNAPSHOT\spring-boot-starter-json-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.13.1\jackson-datatype-jdk8-2.13.1.jar;C:\Users\Qintess\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.13.1\jackson-module-parameter-names-2.13.1.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.0.0-SNAPSHOT\spring-boot-starter-tomcat-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.0.16\tomcat-embed-core-10.0.16.jar;C:\Users\Qintess\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.0.16\tomcat-embed-el-10.0.16.jar;C:\Users\Qintess\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.0.16\tomcat-embed-websocket-10.0.16.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-web\6.0.0-M2\spring-web-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-webmvc\6.0.0-M2\spring-webmvc-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-expression\6.0.0-M2\spring-expression-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-devtools\3.0.0-SNAPSHOT\spring-boot-devtools-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot\3.0.0-SNAPSHOT\spring-boot-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.0.0-SNAPSHOT\spring-boot-autoconfigure-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\com\h2database\h2\1.4.200\h2-1.4.200.jar;C:\Users\Qintess\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.0.0-SNAPSHOT\spring-boot-starter-test-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-test\3.0.0-SNAPSHOT\spring-boot-test-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.0.0-SNAPSHOT\spring-boot-test-autoconfigure-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\com\jayway\jsonpath\json-path\2.6.0\json-path-2.6.0.jar;C:\Users\Qintess\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\Qintess\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\Qintess\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\Qintess\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\3.0.1\jakarta.xml.bind-api-3.0.1.jar;C:\Users\Qintess\.m2\repository\com\sun\activation\jakarta.activation\2.0.1\jakarta.activation-2.0.1.jar;C:\Users\Qintess\.m2\repository\org\assertj\assertj-core\3.22.0\assertj-core-3.22.0.jar;C:\Users\Qintess\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Qintess\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\Qintess\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Qintess\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Qintess\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Qintess\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Qintess\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\Qintess\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\Qintess\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Qintess\.m2\repository\org\mockito\mockito-core\4.2.0\mockito-core-4.2.0.jar;C:\Users\Qintess\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.7\byte-buddy-agent-1.12.7.jar;C:\Users\Qintess\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Qintess\.m2\repository\org\mockito\mockito-junit-jupiter\4.2.0\mockito-junit-jupiter-4.2.0.jar;C:\Users\Qintess\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Qintess\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-core\6.0.0-M2\spring-core-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-jcl\6.0.0-M2\spring-jcl-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-test\6.0.0-M2\spring-test-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\xmlunit\xmlunit-core\2.8.4\xmlunit-core-2.8.4.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Users\Qintess\Documents\jdk-17.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\Qintess\AppData\Local\Temp\surefire1405790907812024969\surefirebooter16696397203541392412.jar C:\Users\Qintess\AppData\Local\Temp\surefire1405790907812024969 2022-01-28T14-10-55_236-jvmRun1 surefire3477441662277960959tmp surefire_016539131585161234664tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Qintess\Documents\app\outros\demo\target\test-classes;C:\Users\Qintess\Documents\app\outros\demo\target\classes;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.0.0-SNAPSHOT\spring-boot-starter-actuator-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter\3.0.0-SNAPSHOT\spring-boot-starter-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.0.0-SNAPSHOT\spring-boot-starter-logging-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\ch\qos\logback\logback-classic\1.2.10\logback-classic-1.2.10.jar;C:\Users\Qintess\.m2\repository\ch\qos\logback\logback-core\1.2.10\logback-core-1.2.10.jar;C:\Users\Qintess\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.17.1\log4j-to-slf4j-2.17.1.jar;C:\Users\Qintess\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\Qintess\.m2\repository\org\slf4j\jul-to-slf4j\1.7.33\jul-to-slf4j-1.7.33.jar;C:\Users\Qintess\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.0.0\jakarta.annotation-api-2.0.0.jar;C:\Users\Qintess\.m2\repository\org\yaml\snakeyaml\1.30\snakeyaml-1.30.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.0.0-SNAPSHOT\spring-boot-actuator-autoconfigure-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-actuator\3.0.0-SNAPSHOT\spring-boot-actuator-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.1\jackson-databind-2.13.1.jar;C:\Users\Qintess\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.1\jackson-annotations-2.13.1.jar;C:\Users\Qintess\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.1\jackson-core-2.13.1.jar;C:\Users\Qintess\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.1\jackson-datatype-jsr310-2.13.1.jar;C:\Users\Qintess\.m2\repository\io\micrometer\micrometer-core\2.0.0-M1\micrometer-core-2.0.0-M1.jar;C:\Users\Qintess\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Qintess\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.0.0-SNAPSHOT\spring-boot-starter-data-jpa-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.0.0-SNAPSHOT\spring-boot-starter-aop-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-aop\6.0.0-M2\spring-aop-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.0.0-SNAPSHOT\spring-boot-starter-jdbc-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-jdbc\6.0.0-M2\spring-jdbc-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\hibernate\hibernate-core-jakarta\5.6.4.Final\hibernate-core-jakarta-5.6.4.Final.jar;C:\Users\Qintess\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\Qintess\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.0.0\jakarta.persistence-api-3.0.0.jar;C:\Users\Qintess\.m2\repository\net\bytebuddy\byte-buddy\1.12.7\byte-buddy-1.12.7.jar;C:\Users\Qintess\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Qintess\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.0\jakarta.transaction-api-2.0.0.jar;C:\Users\Qintess\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\Qintess\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Qintess\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\Qintess\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\Qintess\.m2\repository\org\glassfish\jaxb\jaxb-runtime\3.0.2\jaxb-runtime-3.0.2.jar;C:\Users\Qintess\.m2\repository\org\glassfish\jaxb\jaxb-core\3.0.2\jaxb-core-3.0.2.jar;C:\Users\Qintess\.m2\repository\org\glassfish\jaxb\txw2\3.0.2\txw2-3.0.2.jar;C:\Users\Qintess\.m2\repository\com\sun\istack\istack-commons-runtime\4.0.1\istack-commons-runtime-4.0.1.jar;C:\Users\Qintess\.m2\repository\org\springframework\data\spring-data-jpa\3.0.0-M1\spring-data-jpa-3.0.0-M1.jar;C:\Users\Qintess\.m2\repository\org\springframework\data\spring-data-commons\3.0.0-M1\spring-data-commons-3.0.0-M1.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-orm\6.0.0-M2\spring-orm-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-context\6.0.0-M2\spring-context-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-tx\6.0.0-M2\spring-tx-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-beans\6.0.0-M2\spring-beans-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\slf4j\slf4j-api\1.7.33\slf4j-api-1.7.33.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-aspects\6.0.0-M2\spring-aspects-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.0.0-SNAPSHOT\spring-boot-starter-web-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.0.0-SNAPSHOT\spring-boot-starter-json-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.13.1\jackson-datatype-jdk8-2.13.1.jar;C:\Users\Qintess\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.13.1\jackson-module-parameter-names-2.13.1.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.0.0-SNAPSHOT\spring-boot-starter-tomcat-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.0.16\tomcat-embed-core-10.0.16.jar;C:\Users\Qintess\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.0.16\tomcat-embed-el-10.0.16.jar;C:\Users\Qintess\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.0.16\tomcat-embed-websocket-10.0.16.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-web\6.0.0-M2\spring-web-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-webmvc\6.0.0-M2\spring-webmvc-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-expression\6.0.0-M2\spring-expression-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-devtools\3.0.0-SNAPSHOT\spring-boot-devtools-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot\3.0.0-SNAPSHOT\spring-boot-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.0.0-SNAPSHOT\spring-boot-autoconfigure-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\com\h2database\h2\1.4.200\h2-1.4.200.jar;C:\Users\Qintess\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.0.0-SNAPSHOT\spring-boot-starter-test-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-test\3.0.0-SNAPSHOT\spring-boot-test-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.0.0-SNAPSHOT\spring-boot-test-autoconfigure-3.0.0-SNAPSHOT.jar;C:\Users\Qintess\.m2\repository\com\jayway\jsonpath\json-path\2.6.0\json-path-2.6.0.jar;C:\Users\Qintess\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\Qintess\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\Qintess\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\Qintess\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\3.0.1\jakarta.xml.bind-api-3.0.1.jar;C:\Users\Qintess\.m2\repository\com\sun\activation\jakarta.activation\2.0.1\jakarta.activation-2.0.1.jar;C:\Users\Qintess\.m2\repository\org\assertj\assertj-core\3.22.0\assertj-core-3.22.0.jar;C:\Users\Qintess\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Qintess\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\Qintess\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Qintess\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Qintess\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Qintess\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Qintess\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\Qintess\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\Qintess\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Qintess\.m2\repository\org\mockito\mockito-core\4.2.0\mockito-core-4.2.0.jar;C:\Users\Qintess\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.7\byte-buddy-agent-1.12.7.jar;C:\Users\Qintess\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Qintess\.m2\repository\org\mockito\mockito-junit-jupiter\4.2.0\mockito-junit-jupiter-4.2.0.jar;C:\Users\Qintess\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Qintess\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-core\6.0.0-M2\spring-core-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-jcl\6.0.0-M2\spring-jcl-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\springframework\spring-test\6.0.0-M2\spring-test-6.0.0-M2.jar;C:\Users\Qintess\.m2\repository\org\xmlunit\xmlunit-core\2.8.4\xmlunit-core-2.8.4.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Qintess"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.home" value="C:\Users\Qintess\Documents\jdk-17.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Qintess\Documents\app\outros\demo"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Qintess\AppData\Local\Temp\surefire1405790907812024969\surefirebooter16696397203541392412.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.2+8-LTS-86"/>
+    <property name="user.name" value="Qintess"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Qintess\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Qintess\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.2"/>
+    <property name="user.dir" value="C:\Users\Qintess\Documents\app\outros\demo"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\Qintess\Documents\jdk-17.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Google\Chrome\Application;C:\Users\Qintess\Documents\jdk-17.0.2\bin;C:\Users\Qintess\Documents\jdk-17.0.2\lib;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X64\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X86\;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Qintess\AppData\Local\Microsoft\WindowsApps;;C:\Users\Qintess\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Qintess\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.2+8-LTS-86"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="getEmptyTest{MockMvc}" classname="com.example.demo.http.DemoControllerTest" time="0.065">
+    <failure message="Status expected:&lt;204&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<204> but was:<404>
+	at com.example.demo.http.DemoControllerTest.getEmptyTest(DemoControllerTest.java:58)
+]]></failure>
+    <system-out><![CDATA[2022-01-28 14:10:59.812  INFO 11868 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.http.DemoControllerTest], using SpringBootContextLoader
+2022-01-28 14:10:59.813  INFO 11868 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.demo.http.DemoControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-01-28 14:10:59.813  INFO 11868 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.demo.http.DemoControllerTest]: DemoControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-01-28 14:10:59.843  INFO 11868 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.http.DemoControllerTest
+2022-01-28 14:10:59.844  INFO 11868 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-01-28 14:10:59.845  INFO 11868 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4e5364a3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a336906, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@62054faf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@75d539b9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@20f63ddc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@210c1b9d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@69bc4024, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3578a45b, org.springframework.test.context.event.EventPublishingTestExecutionListener@24f177f5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@65e05005, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6ed691fd, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1efcba00, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@311d28f5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@569a26ab, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@c190cfc]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v3.0.0-SNAPSHOT)
+
+2022-01-28 14:10:59.887  INFO 11868 --- [           main] c.example.demo.http.DemoControllerTest   : Starting DemoControllerTest using Java 17.0.2 on CENW10N0131448 with PID 11868 (started by Qintess in C:\Users\Qintess\Documents\app\outros\demo)
+2022-01-28 14:10:59.887  INFO 11868 --- [           main] c.example.demo.http.DemoControllerTest   : The following profiles are active: default
+2022-01-28 14:11:01.256  INFO 11868 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-01-28 14:11:01.256  INFO 11868 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-01-28 14:11:01.261  INFO 11868 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2022-01-28 14:11:01.285  INFO 11868 --- [           main] c.example.demo.http.DemoControllerTest   : Started DemoControllerTest in 1.434 seconds (JVM running for 5.455)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/transfer
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = org.springframework.web.servlet.resource.ResourceHttpRequestHandler
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="getAllTest{MockMvc}" classname="com.example.demo.http.DemoControllerTest" time="0.064">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.example.demo.http.DemoControllerTest.getAllTest(DemoControllerTest.java:47)
+]]></failure>
+    <system-out><![CDATA[
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /v1/transfer
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = org.springframework.web.servlet.resource.ResourceHttpRequestHandler
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="saveSucess{MockMvc}" classname="com.example.demo.http.DemoControllerTest" time="0.066">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.example.demo.http.DemoControllerTest.saveSucess(DemoControllerTest.java:73)
+]]></failure>
+    <system-out><![CDATA[
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /v1/transfer
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"160"]
+             Body = {"id":null,"amount":1,"feeAmount":1,"createdAt":"2022-01-28","transferAt":"2022-01-30","accountOrigin":"1234567","accountDestination":"123456789987","type":"A"}
+    Session Attrs = {}
+
+Handler:
+             Type = org.springframework.web.servlet.resource.ResourceHttpRequestHandler
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+</testsuite>
